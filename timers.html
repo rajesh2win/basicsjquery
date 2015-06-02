@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div id="settimeout">Hello</div>
+<div id="setinterval">1</div>
+<script>
+
+
+
+
+    var t = setInterval(function() {
+        var $setInterval = $('#setinterval');
+        $setInterval.text(parseInt($setInterval.text(),10)+10);
+    }, 1000);
+
+
+
+    setTimeout(function() {
+        $('#settimeout').hide(); // clearTimeout(t);
+    }, 1000);
+
+</script>
+</body>
+</html>
